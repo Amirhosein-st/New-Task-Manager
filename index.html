@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="icons8-to-do-100.png">
+    <title>Amir Todo List App</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1 class="h1-desktop">Todo List App - <span style="font-size: 1.2rem; color: gray;">Desktop Version</span></h1>
+        <h1 class="h1-mobile">Todo List App - <span style="font-size: 1.2rem; color: gray; white-space: nowrap;">Mobile Version</span></h1>
+
+        <form class="add-todo-container">
+            <input type="text" id="category-input" placeholder="Add category...">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-todo">Add Task <i class="fa-solid fa-file-circle-plus"></i></button>
+        </form>
+        <div class="clear-todos-container">
+            <button id="clear-todos">Clear All Tasks <i class="fa-solid fa-file-circle-xmark"></i></button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Num</th>
+                    <th>Status</th>
+                    <th>Category</th>
+                    <th><i class="fa-solid fa-edit" title="Edit Task Category"></i></th>
+                    <th>Task</th>
+                    <th><i class="fa-sharp fa-solid fa-file-pen" title="Edit Task Text"></i></th>
+                    <th>Added On</th>
+                    <th>Completed On</th>
+                    <th>Bookmark</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="todo-list"></tbody>
+        </table>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
